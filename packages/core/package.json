@@ -1,0 +1,31 @@
+{
+  "name": "@decido/core",
+  "version": "0.0.1",
+  "description": "Entities for Decido",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup --bundleConfigAsCjs -c",
+    "clean": "rm -rf dist",
+    "test": "vitest",
+    "test:cover": "vitest --coverage"
+  },
+  "keywords": [
+    "decido",
+    "entities"
+  ],
+  "author": "Paolo F. Bongiovanni <paolo.bongiovanni@mindiply.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "prettier": "^3.6.2",
+    "rollup": "^4.50.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
